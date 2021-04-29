@@ -16,7 +16,7 @@ float_pattern = re.compile(r'[0-9]+[,\.][0-9]+')
 #   Allowed characters a-zA-Z'äüö
 #
 allowed = list(string.ascii_lowercase)
-allowed.append("'")
+#allowed.append("'")
 allowed.append(' ')
 allowed.extend(list('äöü'))
 
