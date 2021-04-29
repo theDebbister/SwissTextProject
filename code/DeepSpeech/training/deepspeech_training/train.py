@@ -54,7 +54,6 @@ def variable_on_cpu(name, shape, initializer):
         var = tfv1.get_variable(name=name, shape=shape, initializer=initializer)
     return var
 
-
 def create_overlapping_windows(batch_x):
     batch_size = tf.shape(input=batch_x)[0]
     window_width = 2 * Config.n_context + 1
@@ -73,7 +72,6 @@ def create_overlapping_windows(batch_x):
     batch_x = tf.reshape(batch_x, [batch_size, -1, window_width, num_channels])
 
     return batch_x
-
 
 def dense(name, x, units, dropout_rate=None, relu=True, layer_norm=False):
     with tfv1.variable_scope(name):
@@ -94,7 +92,6 @@ def dense(name, x, units, dropout_rate=None, relu=True, layer_norm=False):
 
     return output
 
-
 def rnn_impl_lstmblockfusedcell(x, seq_length, previous_state, reuse):
     with tfv1.variable_scope('cudnn_lstm/rnn/multi_rnn_cell/cell_0'):
         fw_cell = tf.contrib.rnn.LSTMBlockFusedCell(Config.n_cell_dim,
@@ -108,7 +105,6 @@ def rnn_impl_lstmblockfusedcell(x, seq_length, previous_state, reuse):
                                        initial_state=previous_state)
 
     return output, output_state
-
 
 def rnn_impl_cudnn_rnn(x, seq_length, previous_state, _):
     assert previous_state is None # 'Passing previous state not supported with CuDNN backend'
@@ -136,7 +132,6 @@ def rnn_impl_cudnn_rnn(x, seq_length, previous_state, _):
 
 rnn_impl_cudnn_rnn.cell = None
 
-
 def rnn_impl_static_rnn(x, seq_length, previous_state, reuse):
     with tfv1.variable_scope('cudnn_lstm/rnn/multi_rnn_cell'):
         # Forward direction cell:
@@ -158,7 +153,6 @@ def rnn_impl_static_rnn(x, seq_length, previous_state, reuse):
         output = tf.concat(output, 0)
 
     return output, output_state
-
 
 def create_model(batch_x, seq_length, dropout, reuse=False, batch_size=None, previous_state=None, overlap=True, rnn_impl=rnn_impl_lstmblockfusedcell):
     layers = {}
@@ -215,7 +209,6 @@ def create_model(batch_x, seq_length, dropout, reuse=False, batch_size=None, pre
     # Output shape: [n_steps, batch_size, n_hidden_6]
     return layer_6, layers
 
-
 # Accuracy and Loss
 # =================
 
@@ -255,7 +248,6 @@ def calculate_mean_edit_distance_and_loss(iterator, dropout, reuse):
     # Finally we return the average loss
     return avg_loss, non_finite_files
 
-
 # Adam Optimization
 # =================
 
@@ -271,7 +263,6 @@ def create_optimizer(learning_rate_var):
                                          beta2=FLAGS.beta2,
                                          epsilon=FLAGS.epsilon)
     return optimizer
-
 
 # Towers
 # ======
@@ -338,7 +329,6 @@ def get_tower_results(iterator, optimizer, dropout_rates):
     # Return gradients and the average loss
     return tower_gradients, avg_loss_across_towers, all_non_finite_files
 
-
 def average_gradients(tower_gradients):
     r'''
     A routine for computing each variable's average of the gradients obtained from the GPUs.
@@ -375,8 +365,6 @@ def average_gradients(tower_gradients):
     # Return result to caller
     return average_grads
 
-
-
 # Logging
 # =======
 
@@ -401,14 +389,12 @@ def log_variable(variable, gradient=None):
         if grad_values is not None:
             tfv1.summary.histogram(name='%s/gradients' % name, values=grad_values)
 
-
 def log_grads_and_vars(grads_and_vars):
     r'''
     Let's also introduce a helper function for logging collections of gradient/variable tuples.
     '''
     for gradient, variable in grads_and_vars:
         log_variable(variable, gradient=gradient)
-
 
 def train():
     exception_box = ExceptionBox()
@@ -671,18 +657,16 @@ def train():
 
                 print('-' * 80)
 
-
         except KeyboardInterrupt:
             pass
         log_info('FINISHED optimization in {}'.format(datetime.utcnow() - train_start_time))
     log_debug('Session closed.')
-
+    return best_dev_loss
 
 def test():
     samples = evaluate(FLAGS.test_files.split(','), create_model)
     if FLAGS.test_output_file:
         save_samples_json(samples, FLAGS.test_output_file)
-
 
 def create_inference_graph(batch_size=1, n_steps=16, tflite=False):
     batch_size = batch_size if batch_size > 0 else None
@@ -773,10 +757,8 @@ def create_inference_graph(batch_size=1, n_steps=16, tflite=False):
 
     return inputs, outputs, layers
 
-
 def file_relative_read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
-
 
 def export():
     r'''
@@ -871,7 +853,6 @@ def export():
 
     log_info('Model metadata file saved to {}. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.'.format(metadata_fname))
 
-
 def package_zip():
     # --export_dir path/to/export/LANG_CODE/ => path/to/export/LANG_CODE.zip
     export_dir = os.path.join(os.path.abspath(FLAGS.export_dir), '') # Force ending '/'
@@ -880,12 +861,11 @@ def package_zip():
         return
 
     zip_filename = os.path.dirname(export_dir)
-    
+
     shutil.copy(FLAGS.scorer_path, export_dir)
 
     archive = shutil.make_archive(zip_filename, 'zip', export_dir)
     log_info('Exported packaged model {}'.format(archive))
-
 
 def do_single_file_inference(input_file_path):
     with tfv1.Session(config=Config.session_config) as session:
@@ -926,7 +906,6 @@ def do_single_file_inference(input_file_path):
         # Print highest probability result
         print(decoded[0][1])
 
-
 def early_training_checks():
     # Check for proper scorer early
     if FLAGS.scorer_path:
@@ -943,7 +922,6 @@ def early_training_checks():
                  '--load_checkpoint_dir in both cases, or use the same location '
                  'for loading and saving.')
 
-
 def main(_):
     initialize_globals()
     early_training_checks()
@@ -951,7 +929,10 @@ def main(_):
     if FLAGS.train_files:
         tfv1.reset_default_graph()
         tfv1.set_random_seed(FLAGS.random_seed)
-        train()
+        best_dev_loss = train()
+        f = open("optimization_log.txt", "a")
+        f.write("Best loss: " + str(best_dev_loss))
+        f.close()
 
     if FLAGS.test_files:
         tfv1.reset_default_graph()
@@ -975,7 +956,6 @@ def main(_):
     if FLAGS.one_shot_infer:
         tfv1.reset_default_graph()
         do_single_file_inference(FLAGS.one_shot_infer)
-
 
 def run_script():
     create_flags()
