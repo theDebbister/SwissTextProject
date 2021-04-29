@@ -1,0 +1,6 @@
+- trained on swiss text data full set, german text corpus kenlm, learning rate 0.0005, dropout 0.4, WER: 0.746646, CER: 0.532223, loss: 152.055420, BLEU: 0.100805
+- fine tuned 5 epochs on release 0.9.0, WER: 0.730518, CER: 0.511030, loss: 147.559677, BLEU: 0.101
+
+
+n-hidden states for both 1024
+both tested on test07
