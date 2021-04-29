@@ -7,6 +7,7 @@ from multiprocessing.dummy import Pool
 
 import numpy as np
 from attrdict import AttrDict
+from nltk.translate.bleu_score import corpus_bleu
 
 from .flags import FLAGS
 from .text import levenshtein
@@ -55,6 +56,15 @@ def process_decode_result(item):
         'wer': word_distance / word_length,
     })
 
+def calculate_corpus_bleu(samples):
+    references = [[sample.src.split()] for sample in samples]
+    predictions = [sample.res.split() for sample in samples]
+
+    bleu_score = corpus_bleu(references, predictions)
+
+    return bleu_score
+
+
 
 def calculate_and_print_report(wav_filenames, labels, decodings, losses, dataset_name):
     r'''
@@ -88,7 +98,9 @@ def print_report(samples, losses, wer, cer, dataset_name):
 
     # Print summary
     mean_loss = np.mean(losses)
-    print('Test on %s - WER: %f, CER: %f, loss: %f' % (dataset_name, wer, cer, mean_loss))
+    bleu_score = calculate_corpus_bleu(samples)
+
+    print('Test on %s - WER: %f, CER: %f, loss: %f, BLEU: %f' % (dataset_name, wer, cer, mean_loss, bleu_score))
     print('-' * 80)
 
     best_samples = samples[:FLAGS.report_count]
