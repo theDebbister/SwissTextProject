@@ -17,6 +17,7 @@
 - 5 epochs
 - tested on test07
 - no further parameter changes
+- n-hiddenstates 1024
 - WER: 0.730518, CER: 0.511030, loss: 147.559677
 - **BLEU: 0.101**
 
