@@ -21,4 +21,12 @@
 - WER: 0.730518, CER: 0.511030, loss: 147.559677
 - **BLEU: 0.101**
 
+## TRansfer/Fine-tune large
+- Test on sg-speech07/test.csv 
+- 25 epoches
+- early stopping
+- WER: 0.594367, CER: 0.345339, loss: 144.413696
+- **BLEU: 0.236171**
+
+
 
