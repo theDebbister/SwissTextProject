@@ -29,5 +29,13 @@
 - WER: 0.594367, CER: 0.345339, loss: 144.413696
 - **BLEU: 0.236171**
 
+## Fine tune Archimob
+- 11 epochs
+- fine tuned on transfer model above
+- lr: 0.0001, dropout 0.4, alpha and beta from paper
+- archimob-swissgerman-deepspeech-importer/Final_Training_CSV_for_Deepspeech_DE//test.csv 
+- WER: 0.679839, CER: 0.404325, loss: 58.863865
+- **BLEU: 0.135636**
+
 
 
