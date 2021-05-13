@@ -21,7 +21,7 @@
 - WER: 0.730518, CER: 0.511030, loss: 147.559677
 - **BLEU: 0.101**
 
-## Transfer/Fine-tune large
+## Transfer large
 - Test on sg-speech07/test.csv 
 - 25 epoches
 - early stopping
@@ -36,6 +36,8 @@
 - archimob-swissgerman-deepspeech-importer/Final_Training_CSV_for_Deepspeech_DE//test.csv 
 - WER: 0.679839, CER: 0.404325, loss: 58.863865
 - **BLEU: 0.135636**
+
+arichmoib tranfer on release 0.9.0: Test on /mnt/c/Users/debor/archimob-swissgerman-deepspeech-importer/Final_Training_CSV_for_Deepspeech_DE//test.csv - WER: 0.523529, CER: 0.269599, loss: 42.446609, BLEU: **0.272148**
 
 
 
