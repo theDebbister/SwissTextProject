@@ -1,1 +1,33 @@
-\section{Results}
+\section{Experiments \& Results}
+
+\subsection{Datasets}
+We compared models on both the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stcd} contains 38 GB of labeled and 65 GB of unlabeled spoken swiss german audio data and an additional validation set
+containing 1.5 GB of data \cite{stc2019}. The ArchiMob corpus (Release 2) contains X GB of spoken swiss german data \cite{archimob2016}.
+\subsection{Results}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{llll}
+    \hline\textbf{Model\#}    & \textbf{Data} & \textbf{Train BLEU}   & \textbf{Test BLEU} \\\hline   %\\\hline %\rowcolor{gray!50}
+    1                   & SwissText     & 0.23                  & 0.0004                \\%\hline %DeepSpeech (Trained from scratch)
+    2                   & ArchiMob      & 0.27                  & \textbf{0.17}         \\%\hline %DeepSpeech (Pre-trained)
+    3                   & ArchiMob      & 0.24                  & 0.07                  \\%\hline %DeepSpeech + Opus-MT-DE-EN (Pre-trained)
+    \hline
+    \end{tabular}
+    \caption{\label{font-table} Font guide. }
+\end{table}
+
+%\begin{table}[b]
+%    \centering
+%    \begin{tabular}{lllll}
+%    %\begin{tabularx}{\linewidth}{|Y|Z|Y|s|s|}
+%        \hline
+%        \textbf{Model#} & \textbf{Data} & \textbf{Additional information}           & \textbf{Train BLEU}   & \textbf{Test BLEU}    \\\hline %\rowcolor{gray!50}
+%        1               & SwissText     & -                                         & 0.23                  & 0.0004                \\\hline %DeepSpeech (Trained from scratch)
+%        2               & ArchiMob      & Fine-tuned on latest German DeepSpeech    & 0.27                  & \textbf{0.17}         \\\hline %DeepSpeech (Pre-trained)
+%        3               & ArchiMob      & Additional sequence to sequence model     & 0.24                  & 0.07                  \\\hline %DeepSpeech + Opus-MT-DE-EN (Pre-trained)
+%    \end{tabular}
+% %   \end{tabularx}
+%    \caption{Results}
+%    \label{tab:Results}
+%\end{table}

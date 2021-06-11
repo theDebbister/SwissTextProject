@@ -13,18 +13,25 @@
 %%e.agirre@ehu.es or Sergi.Balari@uab.es
 %% and that of ACL 08 by Joakim Nivre and Noah Smith
 
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper,twocolumns]{article}
 \usepackage[hyperref]{acl2021}
 \usepackage{times}
 \usepackage{latexsym}
 \renewcommand{\UrlFont}{\ttfamily\small}
+
+\usepackage{float}
+\usepackage{xcolor}
+
+\usepackage{color, colortbl}
+\usepackage{tabularx}
+\newcolumntype{Z}{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}X}
 
 % This is not strictly necessary, and may be commented out,
 % but it will improve the layout of the manuscript,
 % and will typically save some space.
 \usepackage{microtype}
 
-\aclfinalcopy % Uncomment this line for the final submission
+%\aclfinalcopy % Uncomment this line for the final submission
 %\def\aclpaperid{***} %  Enter the acl Paper ID here
 
 %\setlength\titlebox{5cm}
