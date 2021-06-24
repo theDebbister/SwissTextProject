@@ -34,4 +34,6 @@ model with the following data augmentations:
 The \gls{stcd} dataset is used for the augmentation fine-tuning on the \nth{3} model. This approach achieved a BLEU score of XY on the validation set and XY on the test set. The model was trained for
 X epochs with a warp probability of 0.1 and a tempo probabily of 0.1. We increased the batch size to X, as the augmentation process per batch took more time than expected. Due to time limitations we
 were not able to continue training the model any further, but the model was still improving and we expect that this approach could produce even better results.
-\paragraph{Text-to-Text model \#5}
+\paragraph{Text-to-Text model \#5} Our \nth{5} approach tries to improve the output by adding a text-to-text translation model after the speech-to-text model. We fine tuned a pre-trained german to
+english model following \newcite{TiedemannThottingal:EAMT2020} using the ''huggingface'' framework \cite{wolf-etal-2020-transformers} on the \gls{stcd} dataset. With this approach we achieved a BLEU score of XY on the validation dataset and
+XY on the test dataset.
