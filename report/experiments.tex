@@ -1,8 +1,17 @@
 \section{Experiments}
 
-\subsection{Datasets}
-We compared models on both the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stcd} contains 38 GB of labeled and 65 GB of unlabeled spoken swiss german audio data and an additional validation set
-containing 1.5 GB of data \cite{stc2019}. The ArchiMob corpus (Release 2) contains X GB of spoken swiss german data \cite{archimob2016}.
-\subsection{Experiments}
+\subsection{Training Data}
+To train our model we use a subset of the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stcd} contains 38 GB of labeled, 65 GB of unlabeled spoken swiss german audio data and an additional validation set
+containing 1.5 GB of data \cite{stc2019}. The ArchiMob corpus (Release 2) contains X GB of spoken swiss german data \cite{archimob2016}. We remove all audio files, from the \gls{stcd}, where the quality of the translation
+is rated lower than 0.7 (rating provided by \gls{stc}). Additionally, we also need to remove files larger than XY GB due to memory limitations.
 
-The base model of most our experiments was a pre-trained DeepSpeech model (release 9.0, get link!). The first model we trained served as our private baseline. We trained a bare DeepSpeech model on the SwissText labelled dataset. 
+\subsection{Evaluation metrics}
+We evaluate our model through two types of metrics. The BLEU score \cite{Papineni2002BleuAM}, which is required by the \gls{stc} to compare the results. The \gls{stc} specifically requires a corpus
+based BLEU score (todo cite stc), which aims at measuring the distance/similarity of the generated text and the provided ground truth.\\~\\Additionally, we measure the \gls{wer} for our models, as
+this is a common metric for speech recognition systems \cite{Park2008AnEA}.
+
+\input{environment}
+\subsection{Models}
+Following \newcite{pluss2020} we use a DeepSpeech architecture \cite{Hannun2014DeepSS} as our main model for speech-to-text translation. In order to get better results we use a
+a pre-trained DeepSpeech model \cite{DeepSpeechGerman090} as the base model for most of our experiments. The first model we trained served as our private baseline. We trained a bare DeepSpeech model
+on the labelled \gls{stcd}, which achieved a BLEU score of XY BLEU.
