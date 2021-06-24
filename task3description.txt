@@ -1,0 +1,66 @@
+Welcome to the Swiss German Speech to Standard German Text shared task of the SwissText 2021 conference.
+The goal of this task is to build a system able to translate Swiss German speech in various dialects to Standard German text.
+
+We provide a labeled dataset with 293 hours of recordings (mostly Bern dialect) and an unlabeled dataset with 1208 hours (mostly Zurich dialect).
+The team with the best BLEU score on a 13 hours test set with speakers from all German-speaking parts of Switzerland wins the contest.
+The dialect distribution of the test set is close to the real Swiss German dialect distribution in Switzerland.
+
+We encourage participants to explore and combine suitable supervised, semi-supervised and unsupervised learning approaches.
+They might find inspiration in the solutions to this task's predecessor, GermEval 2020 Task 4: Low-Resource Speech-to-Text.
+
+Timeline
+March 11 	Open for submissions
+May 23 23:59 UTC 	Submission deadline
+June 6 23:59 UTC 	System descriptions due (please use this LaTeX template)
+June 14-16 	SwissText 2021
+June 20 	Notification to authors
+July 4 23:59 UTC 	Camera-ready system descriptions due
+Data
+
+You can download the labeled training data here (use Version 2). Please check the README and the linked paper for details. Download size: ~38 GB
+The unlabeled training data can be downloaded here. Download size: ~65 GB
+The test set of the task can be found here. Download size: ~1.5 GB
+
+Using additional training data is allowed, but has to be declared in the system description.
+
+Submission and evaluation
+
+To make a submission, let your model translate all test set clips to Standard German text.
+The submission is expected in the format of the example_submission.csv you can find in the test set download.
+If you should include characters that need to be quoted, use " as the quote char (CSV default).
+
+We use the NLTK BLEU score implementation with default parameters.
+
+We internally split the test set in two parts of equal size called public and private.
+The score on the public part is displayed in the public ranking.
+The score on the private part is not displayed until the end of the competition. When submissions are closed, the private ranking will be published and will be used to determine the winner. You may know this procedure from the Kaggle platform.
+
+The test set contains the characters ALLOWED_CHARS in the Python code below and your model should support exactly these.
+Punctuation and casing is ignored for the evaluation.
+Numbers are spelled out.
+All other characters are removed from the submission before evaluation using the preprocess_transcript function below. We therefore highly recommend to replace each additional character from your training set with a sensible replacement from ALLOWED_CHARS (see commented example in code) before training.
+
+	
+ALLOWED_CHARS = {
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+    'ä', 'ö', 'ü',
+    ' ',
+}
+WHITESPACE_REGEX = re.compile(r'[ \t]+')
+
+
+def preprocess_transcript(transcript):
+    transcript = transcript.lower()
+    transcript = transcript.replace('ß', 'ss')
+    transcript = transcript.replace('-', ' ')
+    transcript = transcript.replace('–', ' ')
+    # Replace additional characters from your training set here
+    # Example: transcript = transcript.replace('á', 'a')
+    transcript = WHITESPACE_REGEX.sub(' ', transcript)
+    transcript = ''.join([char for char in transcript if char in ALLOWED_CHARS])
+    transcript = WHITESPACE_REGEX.sub(' ', transcript)
+    transcript = transcript.strip()
+
+    return transcript
+	
+	
