@@ -3,7 +3,7 @@
 \subsection{Training Data}
 To train our model we use a subset of the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stcd} contains 38 GB of labeled, 65 GB of unlabeled spoken swiss german audio data and an additional validation set
 containing 1.5 GB of data \cite{stc2019}. The ArchiMob corpus (Release 2) contains X GB of spoken swiss german data \cite{archimob2016}. We remove all audio files, from the \gls{stcd}, where the quality of the translation
-is rated lower than 0.7 (rating provided by \gls{stc}). Additionally, we also need to remove files larger than XY GB due to memory limitations.
+is rated lower than 0.7 (rating provided by \gls{stc}). Additionally, we also need to remove files larger than 1 MB due to memory limitations (ca. 7'000 files). All files were converted from flac to wav files and the sample rate was reduced from 48'000 Hz to 16'000 Hz to match the DeepSpeech input requirements.
 
 \subsection{Evaluation metrics}
 We evaluate our model through two types of metrics. The BLEU score \cite{Papineni2002BleuAM}, which is required by the \gls{stc} to compare the results. The \gls{stc} specifically requires a corpus
