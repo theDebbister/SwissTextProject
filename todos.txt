@@ -1,0 +1,9 @@
+- gpu model, cuda
+- wie lange training
+- swisstext task text reinschreiben
+- grösste files rausgelöscht
+- release 9.0 trainiert
+- wer is better than last year
+- loss, wer, cer werte
+- epochs
+- 
