@@ -1,0 +1,214 @@
+(python-environments) deborah@LAPTOP-01TEDV2B:~/deepspeech-german$ ./transfer_model.sh sg-small07/ /mnt/c/Users/debor/ml4nlp/processing-transfer-archimob-new/checkpoints/
+./transfer_model.sh: line 4: python-environments/bin/activate: No such file or directory
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2949399
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I Initializing variable: layer_6/bias
+I Initializing variable: layer_6/bias/Adam
+I Initializing variable: layer_6/bias/Adam_1
+I Initializing variable: layer_6/weights
+I Initializing variable: layer_6/weights/Adam
+I Initializing variable: layer_6/weights/Adam_1
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 3:17:25 | Steps: 7270 | Loss: 172.077013
+Epoch 0 | Validation | Elapsed Time: 0:12:04 | Steps: 1563 | Loss: 154.307391 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 154.307391 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2956669
+--------------------------------------------------------------------------------
+Epoch 1 |   Training | Elapsed Time: 3:17:38 | Steps: 7270 | Loss: 165.951693
+Epoch 1 | Validation | Elapsed Time: 0:12:03 | Steps: 1563 | Loss: 150.503415 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 150.503415 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2963939
+--------------------------------------------------------------------------------
+Epoch 2 |   Training | Elapsed Time: 3:16:47 | Steps: 7270 | Loss: 162.646828
+Epoch 2 | Validation | Elapsed Time: 0:12:07 | Steps: 1563 | Loss: 148.160310 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 148.160310 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2971209
+--------------------------------------------------------------------------------
+Epoch 3 |   Training | Elapsed Time: 3:17:29 | Steps: 7270 | Loss: 160.163539
+Epoch 3 | Validation | Elapsed Time: 0:12:09 | Steps: 1563 | Loss: 145.967867 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 145.967867 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2978479
+--------------------------------------------------------------------------------
+Epoch 4 |   Training | Elapsed Time: 3:17:22 | Steps: 7270 | Loss: 157.829028
+Epoch 4 | Validation | Elapsed Time: 0:12:05 | Steps: 1563 | Loss: 144.256935 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 144.256935 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2985749
+--------------------------------------------------------------------------------
+Epoch 5 |   Training | Elapsed Time: 3:17:07 | Steps: 7270 | Loss: 156.188215
+Epoch 5 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 142.928354 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 142.928354 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-2993019
+--------------------------------------------------------------------------------
+Epoch 6 |   Training | Elapsed Time: 3:17:25 | Steps: 7270 | Loss: 154.830882
+Epoch 6 | Validation | Elapsed Time: 0:12:06 | Steps: 1563 | Loss: 141.956004 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 141.956004 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3000289
+--------------------------------------------------------------------------------
+Epoch 7 |   Training | Elapsed Time: 3:18:07 | Steps: 7270 | Loss: 153.382911
+Epoch 7 | Validation | Elapsed Time: 0:12:07 | Steps: 1563 | Loss: 140.572075 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 140.572075 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3007559
+--------------------------------------------------------------------------------
+Epoch 8 |   Training | Elapsed Time: 3:16:55 | Steps: 7270 | Loss: 151.869834
+Epoch 8 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 139.799985 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 139.799985 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3014829
+--------------------------------------------------------------------------------
+Epoch 9 |   Training | Elapsed Time: 3:17:54 | Steps: 7270 | Loss: 151.440539
+Epoch 9 | Validation | Elapsed Time: 0:12:09 | Steps: 1563 | Loss: 139.109570 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 139.109570 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3022099
+--------------------------------------------------------------------------------
+Epoch 10 |   Training | Elapsed Time: 3:17:07 | Steps: 7270 | Loss: 150.396915
+Epoch 10 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 138.433760 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 138.433760 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3029369
+--------------------------------------------------------------------------------
+Epoch 11 |   Training | Elapsed Time: 3:17:32 | Steps: 7270 | Loss: 149.498171
+Epoch 11 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 137.674672 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 137.674672 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3036639
+--------------------------------------------------------------------------------
+Epoch 12 |   Training | Elapsed Time: 0:09:16 | Steps: 339 | Loss: 150.566057                                                                                E The following files caused an infinite (or NaN) loss: /mnt/c/Users/debor/ml4nlp/audio/455a5b27-280c-4401-8205-1ccacb9e5306.wav
+Epoch 12 |   Training | Elapsed Time: 3:17:58 | Steps: 7270 | Loss: inf
+Epoch 12 | Validation | Elapsed Time: 0:12:09 | Steps: 1563 | Loss: 136.865544 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 136.865544 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3043909
+--------------------------------------------------------------------------------
+Epoch 13 |   Training | Elapsed Time: 0:09:15 | Steps: 339 | Loss: 148.002393                                                                                E The following files caused an infinite (or NaN) loss: /mnt/c/Users/debor/ml4nlp/audio/455a5b27-280c-4401-8205-1ccacb9e5306.wav
+Epoch 13 |   Training | Elapsed Time: 3:17:20 | Steps: 7270 | Loss: inf
+Epoch 13 | Validation | Elapsed Time: 0:12:10 | Steps: 1563 | Loss: 136.483595 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 136.483595 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3051179
+--------------------------------------------------------------------------------
+Epoch 14 |   Training | Elapsed Time: 3:17:33 | Steps: 7270 | Loss: 147.058798
+Epoch 14 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 135.699211 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 135.699211 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3058449
+--------------------------------------------------------------------------------
+Epoch 15 |   Training | Elapsed Time: 0:09:17 | Steps: 339 | Loss: 149.290224                                                                                E The following files caused an infinite (or NaN) loss: /mnt/c/Users/debor/ml4nlp/audio/455a5b27-280c-4401-8205-1ccacb9e5306.wav
+Epoch 15 |   Training | Elapsed Time: 3:18:13 | Steps: 7270 | Loss: inf
+Epoch 15 | Validation | Elapsed Time: 0:03:29 | Steps: 447 | Loss: 134.442403 | Dataset: sg-small07//dev.csv                                               Epoch 15 | Validation | Elapsed Time: 0:03:34 | Steps: 458 | Loss: 134.453341 | Dataset: sg-small07//dev.csv                               Epoch 15 | Validation | Elapsed Time: 0:03:34 | Steps: 459 | Loss: 134.406874 | Dataset: sg-small07//dev.csv                              Epoch 15 | Validation | Elapsed Time: 0:03:35 | Steps: 460 | Loss: 1Epoch 15 | Validation | Elapsed Time: 0:03:35 | Steps: 461 | Loss: 134.434179 | Dataset: sEpoch 15 | Validation | Elapsed TiEpoch 15 | ValidatioEpoch 15 | Validation | Elapsed Time: 0:03:37 | Steps: 464 | Loss: 134.548657 | Dataset: sg-Epoch 15 | Validation | Elapsed Time: 0:03:37 | Steps: 465 | Loss: 134.496612 | Dataset: sg-small07//devEpoch 15 | Validation | Elapsed Time: 0:03:37 | Steps: 466 | Loss: 134.426886 | Dataset:Epoch 15 | Validation | Elapsed Time: 0:03:38 | Steps: 467 | Loss: 134.408415 | DataseEpoch 15 | Validation | Epoch 15 | Validation | Elapsed Time: 0:03:40 | Steps: 472 | Loss: 134.448138 | Dataset: sg-smalEpoch 15 | Validation | Elapsed Time: 0:03:41 | Steps: 473 | Loss: 134.425011 | Dataset: sEpoch 15 | Validation | Elapsed Time: 0:03Epoch 15 | Validation | Elapsed Time: 0:12:29 | Steps: 1563 | Loss: 135.324660 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 135.324660 to: /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3065719
+--------------------------------------------------------------------------------
+Epoch 16 |   Training | Elapsed Time: 0:03:22 | Steps: 114 | Loss: 149.524752                                                           Epoch 16 |   Training | Elapsed Time: 0:03:24 | Steps: 115 | Loss: 149.4232Epoch 16 |   Training | Elapsed Time: 0:03:25 | Steps: 116 | Loss: 149.077306                                                                                                                                     ^CProcess ForkPoolWorker-393:
+
+KeyboardInterrupt
+I FINISHED optimization in 2 days, 7:58:25.474496
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-transfer-swisstext//checkpoints/best_dev-3065719
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on sg-small07//test.csv
+Test epoch | Steps: 1560 | Elapsed Time: 0:26:00
+Test on sg-small07//test.csv - WER: 0.568611, CER: 0.329985, loss: 134.633209, BLEU: 0.254968
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.015625, loss: 53.790981
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/292b1794-8b68-4842-883b-b05ff4fb8024.wav
+ - src: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von  drei komma fünf  prozent sehr hoch finden"
+ - res: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von drei komma fünf prozent sehr hoch finden"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 53.716053
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/e847a12e-77d8-4bc4-834f-45ca86e92046.wav
+ - src: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+ - res: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 51.791744
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3572e078-7a2d-4572-b4c2-e54fe0dfa593.wav
+ - src: "die svp fraktion befürwortet ein handelsabkommen mit malaysia indonesien und weiteren staaten südostasiens"
+ - res: "die svp fraktion befürwortet ein handelsabkommen mit malaysia indonesien und weiteren staaten südostasiens"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 43.393967
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/ed49aa51-6972-4c98-b38b-cabe37d92095.wav
+ - src: "beim dritten punkt geht es um die beteiligung an den gemeinnützigen beschäftigungsprogrammen"
+ - res: "beim dritten punkt geht es um die beteiligung an den gemeinnützigen beschäftigungsprogrammen"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.022472, loss: 42.157578
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c3cb193a-8af4-46c3-beab-f1f3cfe6139c.wav
+ - src: "wenn wir  zehn  kilometer auf einer geteerten strasse gehen sind wir am schluss erschöpft"
+ - res: "wenn wir zehn kilometer auf einer geteerten strasse gehen sind wir am schluss erschöpft"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.571429, CER: 0.341463, loss: 112.020477
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/60ee334e-ff89-4d36-93d3-3a5948de3f32.wav
+ - src: "wer diesen bericht zur kenntnis nehmen will stimmt ja wer dies ablehnt stimmt nein"
+ - res: "wer diesen bericht zu einem westen den stimmt ja wenn das nicht masten stimmt nein"
+--------------------------------------------------------------------------------
+WER: 0.571429, CER: 0.333333, loss: 111.290901
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/002ee7f1-af8d-4d32-a0d2-4849e06f61bb.wav
+ - src: "beim zweiten grossratsvizepräsidium kommt es wie schon vor einem jahr zu einer echten auswahl"
+ - res: "zum zweiten grossrat vizepräsident wie von jahr zu den echten auswahl"
+--------------------------------------------------------------------------------
+WER: 0.571429, CER: 0.340426, loss: 109.105873
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/9e2ece17-ddc6-48ba-9e9f-caf3f439d967.wav
+ - src: "nun möchte ich noch einen persönlichen rückblick auf die zeit seit der septembersession machen"
+ - res: "ich möchte ich noch ein persönlicher rückblick machen auf die zeit ziemer in der session in "
+--------------------------------------------------------------------------------
+WER: 0.571429, CER: 0.363636, loss: 109.022697
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/bbb7adf8-739a-433c-9ce8-d5c528df7ab3.wav
+ - src: "ich beantrage ihnen im namen der gpk die drei berichte zur kenntnis zu nehmen"
+ - res: "die beantrage ich im namen der gpk die drei berichte in der welt so gut zur kenntnis zu sehen"
+--------------------------------------------------------------------------------
+WER: 0.571429, CER: 0.279070, loss: 108.746452
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/f3202e7d-e0e7-4025-ad23-43417b3da355.wav
+ - src: "und damit die kleider trocken und um andere nicht zu schocken braucht frau täglich einwegstopfer und bringt damit manch ein opfer"
+ - res: "damit sie leiden und um anderen nicht zu schonen pracht alt glich ein winston bringt mit manch ein opfer"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 2.600000, CER: 1.282609, loss: 210.352539
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3f47607d-b205-4a0e-a58a-6873f17fa03a.wav
+ - src: "sie haben diesen rückweisungsantrag angenommen"
+ - res: "in der istra angenommen mit hundert vierzehn ja stimmen bei achtzehn nein stimmen"
+--------------------------------------------------------------------------------
+WER: 2.600000, CER: 1.939394, loss: 182.093796
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/115d34fe-5ddd-423f-ad20-00e3688b5174.wav
+ - src: "sie haben diesen antrag abgelehnt"
+ - res: "wie den abgelehnt mit sechsundachtzig nein stimmen wir sie in ein fünfzig ja stimmen"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.600000, loss: 40.257778
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c78ed748-bb18-4570-bc9b-7e85ec3edb48.wav
+ - src: "messerlilöffel "
+ - res: "messer löffel konkret"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.263158, loss: 22.095470
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a1730e5c-a16c-48b1-a0bd-4bfce1357f24.wav
+ - src: "ausgabenbewilligung"
+ - res: "es gab bewilligung"
+--------------------------------------------------------------------------------
+WER: 4.000000, CER: 1.500000, loss: 81.712936
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/0502fed3-7fb1-4833-8f57-07a6ab0c07fc.wav
+ - src: "entschuldigung"
+ - res: "habe ich zweiundsechzig sie"
+--------------------------------------------------------------------------------
