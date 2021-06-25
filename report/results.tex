@@ -10,9 +10,12 @@ Interestingly, we noticed that our internal deviations in the BLEU score are not
     2                   & ArchiMob      & 0.27                  & \textbf{0.17}             &               \\
     3                   & ArchiMob      & 0.24                  & 0.07                      &               \\
     4                   & ArchiMob      & 0.24                  & 0.07                      &               \\
-    5                   & ArchiMob      & 0.24                  & 0.07                      &               \\
+    5                   & ArchiMob      & 0.29                  & 0.07                      & 0.29          \\
     \hline
     \end{tabular}
     \caption{Results}
     \label{tab:Results}
 \end{table*}
+After multiple improvements our best results were achieved by our \nth{2} model. We assume that this is due to the dialect distribution on the actual test set, which is closer to the ArchiMob dataset
+than the \gls{stcd} dataset. We expect that further improvements can be achieved by the data augmentation approach, which had to be stopped due to time limitations. As previously explained in the
+model description the \nth{4} model was still improving and should be trained more extensively.

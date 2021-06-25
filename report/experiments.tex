@@ -16,12 +16,12 @@ this is a common metric for speech recognition systems \cite{Park2008AnEA} which
 Following \newcite{pluss2020} we use a DeepSpeech architecture \cite{Hannun2014DeepSS} as our main model for speech-to-text translation. In order to get better results we use a
 a pre-trained DeepSpeech model \cite{DeepSpeechGerman090} as the base model for most of our experiments. The first model we trained served as our private baseline. \paragraph{Baseline model} We trained a bare DeepSpeech model with the default hyperparameters
 on the labelled \gls{stcd} which achieved a BLEU score of 0.0004 BLEU on the official test set. The baseline model will be revered to as baseline model or model \#0 henceforth.\paragraph{Pre-trained model \#1} In order to improve our baseline model we use a pre-trained
-german DeepSpeech model \cite{DeepSpeechGerman090}, which is fine-tuned on the \gls{stcd} dataset for 75 epochs, with a learning rate of XY, and a batch size of 12. The model achieved a BLEU score of
+german DeepSpeech model \cite{DeepSpeechGerman090}, which is fine-tuned on the \gls{stcd} dataset with the previously mentioned hyperparameters. The model achieved a BLEU score of
 XY on the validation set and XY on the test set.
 \paragraph{Additional data model \#2} To further improve our \nth{1} model we added additional data to our fine-tuned model. We added the ArchiMob data and fine-tuned for an additional 75 epochs, with
 the same hyperparameters as in model \#1 and achieved the following BLEU scores on the validation and trainig set, XYZ, XYZ2, respectively.
 \paragraph{ArchiMob data model \#3} As the \nth{2} model did not achieve the expected results we decided to fine-tune our model on the ArchiMob data, as we expected the data distribution to be closer
-to the actual test set. The model was trained for 75 epochs, with a learning rate of XY, and a batch size of XY. We achieved the following BLEU scores for the validation and test set, XYZ, XYZ2,
+to the actual test set. We achieved the following BLEU scores for the validation and test set, XYZ, XYZ2,
 respectively.
 \paragraph{Augmented data model \#4} In order to produce a more robust model, that can handle different pronunciations and speeds, we added data augmentation to our \nth{3} model. We fine-tuned our
 model with the following data augmentations:
@@ -32,7 +32,7 @@ model with the following data augmentations:
 \end{itemize}
 
 The \gls{stcd} dataset is used for the augmentation fine-tuning on the \nth{3} model. This approach achieved a BLEU score of XY on the validation set and XY on the test set. The model was trained for
-X epochs with a warp probability of 0.1 and a tempo probabily of 0.1. We increased the batch size to X, as the augmentation process per batch took more time than expected. Due to time limitations we
+10 epochs with a warp probability of 0.1 and a tempo probabily of 0.1. We increased the batch size to 36, as the augmentation process per batch took more time than expected. Due to time limitations we
 were not able to continue training the model any further, but the model was still improving and we expect that this approach could produce even better results. The \gls{wer} progression is depicted in the following plot:
 \begin{figure}[H]
     \includegraphics[width=\linewidth,height=5cm]{img/werPlot.png}
