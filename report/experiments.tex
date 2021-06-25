@@ -1,22 +1,22 @@
 \section{Experiments}
 
 \subsection{Training Data}
-To train our model we use a subset of the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stcd} contains 38 GB of labeled, 65 GB of unlabeled spoken swiss german audio data and an additional validation set
-containing 1.5 GB of data \cite{stc2019}. The ArchiMob corpus (Release 2) contains X GB of spoken swiss german data \cite{archimob2016}. We remove all audio files, from the \gls{stcd}, where the quality of the translation
-is rated lower than 0.7 (rating provided by \gls{stc}). Additionally, we also need to remove files larger than 1 MB due to memory limitations (ca. 7'000 files). All files were converted from flac to wav files and the sample rate was reduced from 48'000 Hz to 16'000 Hz to match the DeepSpeech input requirements.
+To train our model we use a subset of the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stcd} contains 38 GB (ca. 150k files) of labelled, 65 GB of unlabelled spoken swiss german audio data and an additional validation set
+containing 1.5 GB of data \cite{stc2019}. The ArchiMob corpus (Release 2) contains X GB of spoken swiss german data \cite{archimob2016}. We remove all audio files from the \gls{stcd} where the quality of the translation
+is rated lower than 0.7 (rating provided by \gls{stc}) which are still around 130k files. Additionally, we also need to remove files larger than 1 MB due to memory limitations (ca. 7k files). All files were converted from flac to wav files and the sample rate was reduced from 48'000 Hz to 16'000 Hz to match the DeepSpeech input requirements.
+The German DeepSpeech comes with a script to pre-process the transcriptions. This removes all punctuation, converts numbers to their respective text version, converts the text to lowercase and normalizes some characters. This fits the requirements given by the \gls{stc}.
 
 \subsection{Evaluation metrics}
 We evaluate our model through two types of metrics. The BLEU score \cite{Papineni2002BleuAM}, which is required by the \gls{stc} to compare the results. The \gls{stc} specifically requires a corpus
-based BLEU score (todo cite stc), which aims at measuring the distance/similarity of the generated text and the provided ground truth.\\~\\Additionally, we measure the \gls{wer} for our models, as
-this is a common metric for speech recognition systems \cite{Park2008AnEA}.
+based BLEU score (todo cite stc), which aims at measuring the distance/similarity of the generated text and the provided ground truth. As the German DeepSpeech test script does not include the BLEU score we added it manually. \\~\\Additionally, we keep track of the \gls{wer} for our models, as
+this is a common metric for speech recognition systems \cite{Park2008AnEA} which is also included in the German DeepSpeech.
 
 \input{environment}
 \subsection{Models}
 Following \newcite{pluss2020} we use a DeepSpeech architecture \cite{Hannun2014DeepSS} as our main model for speech-to-text translation. In order to get better results we use a
-a pre-trained DeepSpeech model \cite{DeepSpeechGerman090} as the base model for most of our experiments. The first model we trained served as our private baseline. \paragraph{Baseline model} We trained a bare DeepSpeech model,
-with the default hyperparameters from \newcite{Agarwal2019GermanES},
-on the labelled \gls{stcd}, which achieved a BLEU score of XY BLEU. The baseline model will be revered to as baseline model or model \#0 henceforth.\paragraph{Pre-trained model \#1} In order to improve our baseline model we use a pre-trained
-german DeepSpeech model \cite{DeepSpeechGerman090}, which is fine-tuned on the \gls{stcd} dataset for 75 epochs, with a learning rate of XY, and a batch size of XY. The model achieved a BLEU score of
+a pre-trained DeepSpeech model \cite{DeepSpeechGerman090} as the base model for most of our experiments. The first model we trained served as our private baseline. \paragraph{Baseline model} We trained a bare DeepSpeech model with the default hyperparameters
+on the labelled \gls{stcd} which achieved a BLEU score of 0.0004 BLEU on the official test set. The baseline model will be revered to as baseline model or model \#0 henceforth.\paragraph{Pre-trained model \#1} In order to improve our baseline model we use a pre-trained
+german DeepSpeech model \cite{DeepSpeechGerman090}, which is fine-tuned on the \gls{stcd} dataset for 75 epochs, with a learning rate of XY, and a batch size of 12. The model achieved a BLEU score of
 XY on the validation set and XY on the test set.
 \paragraph{Additional data model \#2} To further improve our \nth{1} model we added additional data to our fine-tuned model. We added the ArchiMob data and fine-tuned for an additional 75 epochs, with
 the same hyperparameters as in model \#1 and achieved the following BLEU scores on the validation and trainig set, XYZ, XYZ2, respectively.
