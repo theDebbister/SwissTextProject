@@ -1,0 +1,2 @@
+Test on sg-speech07/test.csv - WER: 0.594367, CER: 0.345339, loss: 144.413696, BLEU: 0.236171
+25 epoches, early stopping

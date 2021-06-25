@@ -1,0 +1,1274 @@
+(python-environments) deborah@LAPTOP-01TEDV2B:~/deepspeech-german$ ./fine_tune_model.sh sg-speech07/
+./fine_tune_model.sh: line 4: python-environments/env/bin/activate: No such file or directory
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-transfer-archimob-new//checkpoints/best_dev-2942129
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/bias/Adam
+I Loading variable from checkpoint: layer_6/bias/Adam_1
+I Loading variable from checkpoint: layer_6/weights
+I Loading variable from checkpoint: layer_6/weights/Adam
+I Loading variable from checkpoint: layer_6/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 2:54:39 | Steps: 5416 | Loss: 176.948668                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:42 | Steps: 5417 | Loss: 176.950075                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:44 | Steps: 5418 | Loss: 176.943767                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:46 | Steps: 5419 | Loss: 176.943479                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:48 | Steps: 5420 | Loss: 176.934632                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:50 | Steps: 5421 | Loss: 176.942736                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:52 | Steps: 5422 | Loss: 176.943756                                                                                                                                    Epoch 0 |   Training | Elapsed Time: 2:54:54 | Steps: 5423 | Loss: 176.951555                                                                                                                                    Epoch 0 |   TraiEpoch 0 |   Training | Elapsed Time: 4:01:36 | Steps: 7512 | Loss: 174.683959
+Epoch 0 | Validation | Elapsed Time: 0:15:01 | Steps: 1610 | Loss: 162.233592 | Dataset: sg-speech07//dev.csv
+I Saved new best validating model with loss 162.233592 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2949641
+--------------------------------------------------------------------------------
+Epoch 1 |   Training | Elapsed Time: 3:57:40 | Steps: 7512 | Loss: 164.904188
+Epoch 1 | Validation | Elapsed Time: 0:14:58 | Steps: 1610 | Loss: 156.944136 | Dataset: sg-speech07//dev.csv
+I Saved new best validating model with loss 156.944136 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2957153
+--------------------------------------------------------------------------------
+Epoch 2 |   Training | Elapsed Time: 1:16:11 | Steps: 2412 | Loss: 162.473507
+Epoch 2 |   Training | Elapsed Time: 1:16:13 | Steps: 2413 | Loss: 162.473509
+Epoch 2 |   Training | Elapsed Time: 3:56:15 | Steps: 7512 | Loss: 160.525395
+Epoch 2 | Validation | Elapsed Time: 0:14:51 | Steps: 1610 | Loss: 153.667833 | Dataset: sg-speech07//dev.csv
+I Saved new best validating model with loss 153.667833 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2964665
+--------------------------------------------------------------------------------
+Epoch 3 |   Training | Elapsed Time: 3:54:19 | Steps: 7512 | Loss: 157.344876
+Epoch 3 | Validation | Elapsed Time: 0:14:44 | Steps: 1610 | Loss: 151.168921 | Dataset: sg-speech07//dev.csv
+I Saved new best validating model with loss 151.168921 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2972177
+--------------------------------------------------------------------------------
+Epoch 4 |   Training | Elapsed Time: 3:57:58 | Steps: 7512 | Loss: 154.902049
+Epoch 4 | Validation | Elapsed Time: 0:15:28 | Steps: 1610 | Loss: 149.307795 | Dataset: sg-speech07//dev.csv
+I Saved new best validating model with loss 149.307795 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2979689
+--------------------------------------------------------------------------------
+I FINISHED optimization in 21:03:12.113264
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2979689
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on sg-speech07//test.csv
+Test epoch | Steps: 1610 | Elapsed Time: 0:36:24
+Test on sg-speech07//test.csv - WER: 0.600612, CER: 0.347989, loss: 149.498276, BLEU: 0.225175
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 47.987030
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/ed49aa51-6972-4c98-b38b-cabe37d92095.wav
+ - src: "beim dritten punkt geht es um die beteiligung an den gemeinnützigen beschäftigungsprogrammen"
+ - res: "beim dritten punkt geht es um die beteiligung an den gemeinnützigen beschäftigungsprogrammen"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 47.354069
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c999d763-7b2c-46c4-a259-00624001b32e.wav
+ - src: "hier geht es um die wahlen der kantonalen exekutive und legislative die gesetze machen und umsetzen"
+ - res: "hier geht es um die wahlen der kantonalen exekutive und legislative die gesetze machen und umsetzen"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 46.261082
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/4f280ead-8ca7-46ec-a617-e89dc394c378.wav
+ - src: "die regierung zeigt in ihrer antwort auf wie das heute gültige tarifsystem funktioniert und ist der meinung es sei eine gute lösung"
+ - res: "die regierung zeigt in ihrer antwort auf wie das heute gültige tarifsystem funktioniert und ist der meinung es sei eine gute lösung"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.022472, loss: 44.889778
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c3cb193a-8af4-46c3-beab-f1f3cfe6139c.wav
+ - src: "wenn wir  zehn  kilometer auf einer geteerten strasse gehen sind wir am schluss erschöpft"
+ - res: "wenn wir zehn kilometer auf einer geteerten strasse gehen sind wir am schluss erschöpft"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 42.774170
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/7e51a8fa-dc3f-444b-99e0-d030a809c36f.wav
+ - src: "für die fraktion der evp überwiegen klar die negativen aspekte einer erhöhung des freihandels"
+ - res: "für die fraktion der evp überwiegen klar die negativen aspekte einer erhöhung des freihandels"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.600000, CER: 0.222222, loss: 22.984377
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/070100ad-19f5-488b-9cc3-4bcdb81af986.wav
+ - src: "kurz noch zu den planungserklärungen"
+ - res: "kurz zu den planungs erklärung"
+--------------------------------------------------------------------------------
+WER: 0.600000, CER: 0.212121, loss: 22.659359
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/488f2184-c91f-4a42-92be-6c2ebca7fbd1.wav
+ - src: "gibt es sanktionen bei verstössen"
+ - res: "gibt sanktionen wie verstösse"
+--------------------------------------------------------------------------------
+WER: 0.600000, CER: 0.138889, loss: 22.410271
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/d4e5159d-4edc-4c90-bb00-ff9632f603fc.wav
+ - src: "dies ist der kleinstmögliche schaden"
+ - res: "es ist der kleinste möglich schaden"
+--------------------------------------------------------------------------------
+WER: 0.600000, CER: 0.166667, loss: 22.340805
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/7755eb19-0829-4794-bb3a-21190b1c7284.wav
+ - src: "so das gehörte noch dazu"
+ - res: "so das gehört noch der zu"
+--------------------------------------------------------------------------------
+WER: 0.600000, CER: 0.333333, loss: 22.277905
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/6ced7bd1-21ea-4d38-9767-ada80adbfbaf.wav
+ - src: "das ist auch sehr gut"
+ - res: "es ist als er gut"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.152174, loss: 186.163071
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3f47607d-b205-4a0e-a58a-6873f17fa03a.wav
+ - src: "sie haben diesen rückweisungsantrag angenommen"
+ - res: "die in antrag angenommen mit der vierzehn ja stimmen bei achtzehn einstimmen"
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.848485, loss: 171.615952
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/115d34fe-5ddd-423f-ad20-00e3688b5174.wav
+ - src: "sie haben diesen antrag abgelehnt"
+ - res: "wie die abgelehnt mit sechsundachtzig nein stimmen wie sie in fünfzig ja stimmen "
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.600000, loss: 41.771881
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c78ed748-bb18-4570-bc9b-7e85ec3edb48.wav
+ - src: "messerlilöffel "
+ - res: "messer löffel konkret"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.263158, loss: 27.455172
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a1730e5c-a16c-48b1-a0bd-4bfce1357f24.wav
+ - src: "ausgabenbewilligung"
+ - res: "es gab bewilligung"
+--------------------------------------------------------------------------------
+WER: 5.000000, CER: 1.500000, loss: 71.639374
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/0502fed3-7fb1-4833-8f57-07a6ab0c07fc.wav
+ - src: "entschuldigung"
+ - res: "habe ich zwei sechzig sie"
+--------------------------------------------------------------------------------
+I Exporting the model...
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2979689
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob
+I Model metadata file saved to /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob/author_model_0.0.1.md. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.
+
+(python-environments) deborah@LAPTOP-01TEDV2B:~/deepspeech-german$ ./fine_tune_model.sh sg-small07/
+./fine_tune_model.sh: line 4: python-environments/env/bin/activate: No such file or directory
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2979689
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/bias/Adam
+I Loading variable from checkpoint: layer_6/bias/Adam_1
+I Loading variable from checkpoint: layer_6/weights
+I Loading variable from checkpoint: layer_6/weights/Adam
+I Loading variable from checkpoint: layer_6/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:01:10 | Steps: 41 | Loss: 156.193940                                                                                   Epoch 0 |   Training | Elapsed Time: 3:11:10 | Steps: 7270 | Loss: 153.673263
+Epoch 0 | Validation | Elapsed Time: 0:12:12 | Steps: 1563 | Loss: 141.072671 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 141.072671 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2986959
+--------------------------------------------------------------------------------
+Epoch 1 |   Training | Elapsed Time: 3:10:56 | Steps: 7270 | Loss: 152.293889
+Epoch 1 | Validation | Elapsed Time: 0:12:11 | Steps: 1563 | Loss: 139.921543 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 139.921543 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-2994229
+--------------------------------------------------------------------------------
+Epoch 2 |   Training | Elapsed Time: 3:10:27 | Steps: 7270 | Loss: 151.493420
+Epoch 2 | Validation | Elapsed Time: 0:12:13 | Steps: 1563 | Loss: 139.129671 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 139.129671 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3001499
+--------------------------------------------------------------------------------
+Epoch 3 |   Training | Elapsed Time: 3:11:03 | Steps: 7270 | Loss: 150.296247
+Epoch 3 | Validation | Elapsed Time: 0:12:52 | Steps: 1563 | Loss: 138.621946 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 138.621946 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3008769
+--------------------------------------------------------------------------------
+Epoch 4 |   Training | Elapsed Time: 3:21:13 | Steps: 7270 | Loss: 149.505371
+Epoch 4 | Validation | Elapsed Time: 0:13:00 | Steps: 1563 | Loss: 137.721208 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 137.721208 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3016039
+--------------------------------------------------------------------------------
+Epoch 5 |   Training | Elapsed Time: 1:14:54 | Steps: 2782 | Loss: 149.768503                                                                               EpEpoch 5 |   Training | Elapsed Time: 3:13:26 | Steps: 7270 | Loss: 148.701330
+Epoch 5 | Validation | Elapsed Time: 0:12:22 | Steps: 1563 | Loss: 136.927007 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 136.927007 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3023309
+--------------------------------------------------------------------------------
+Epoch 6 |   Training | Elapsed Time: 0:00:07 | Steps: 4 | Loss: 137.520239                                                                                   ^CProcess ForkPoolWorker-153:
+
+I FINISHED optimization in 20:33:35.612614
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3023309
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on sg-small07//test.csv
+Test epoch | Steps: 1560 | Elapsed Time: 0:27:39
+Test on sg-small07//test.csv - WER: 0.577788, CER: 0.333492, loss: 136.236618, BLEU: 0.248079
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 54.379097
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/e847a12e-77d8-4bc4-834f-45ca86e92046.wav
+ - src: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+ - res: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.015625, loss: 53.222740
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/292b1794-8b68-4842-883b-b05ff4fb8024.wav
+ - src: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von  drei komma fünf  prozent sehr hoch finden"
+ - res: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von drei komma fünf prozent sehr hoch finden"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 44.179443
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/5e57c367-2a85-4c97-ade5-f8a8b02a88a9.wav
+ - src: "dort geht es um eine konkrete angelegenheit und nicht wie hier um eine blankovollmacht"
+ - res: "dort geht es um eine konkrete angelegenheit und nicht wie hier um eine blankovollmacht"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 41.656853
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c999d763-7b2c-46c4-a259-00624001b32e.wav
+ - src: "hier geht es um die wahlen der kantonalen exekutive und legislative die gesetze machen und umsetzen"
+ - res: "hier geht es um die wahlen der kantonalen exekutive und legislative die gesetze machen und umsetzen"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 41.448280
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/ed49aa51-6972-4c98-b38b-cabe37d92095.wav
+ - src: "beim dritten punkt geht es um die beteiligung an den gemeinnützigen beschäftigungsprogrammen"
+ - res: "beim dritten punkt geht es um die beteiligung an den gemeinnützigen beschäftigungsprogrammen"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.583333, CER: 0.402174, loss: 466.472321
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/8df51938-eb6d-4fb2-aa8d-9887e5c0b823.wav
+ - src: "im weiteren sind die richtlinien der schweizerischen konferenz für sozialhilfe skos bereits heute  zehn  prozent zu tief gemessen an den  zehn  prozent einkommensschwächsten haushalten"
+ - res: "im weiteren sind das kos richtlinie bereits heute prozent die gemessen an den zehn prozent einkommen schwächsten haushaltungen"
+--------------------------------------------------------------------------------
+WER: 0.583333, CER: 0.347280, loss: 373.671265
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/6d8bfc8a-9fcf-40e1-b85c-a3e700f9b578.wav
+ - src: "wenn  zweihundert  personen auf uns grossräte zugehen und ihnen ein problem oder ein anliegen schildern ist es doch genau unsere aufgabe sich dieser sache anzunehmen und abzuklären ob und wie man die betreffende situation verbessern könnte"
+ - res: "e zwei hundert personen auf in geltung rossatz und im oder ihre probleme und der algen schildert es doch genau unser aufgabe sich dem anzunehmen abzuklären ob und wie wir die situation verbessern "
+--------------------------------------------------------------------------------
+WER: 0.583333, CER: 0.393064, loss: 331.586609
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/9bfd3d6f-7e33-43e5-953f-005f3eab3a0c.wav
+ - src: "das nationale gesetz welches am  eins komma null eins  zweitausendzwanzig  in kraft tritt ist umfassend und lässt uns wenig regungsspielraum daher eben ein ausführungsgesetz"
+ - res: "das nationale gesetz die ersten zwanzig in kraft tritt ist umfassend und aus weniger regen gespielen ausführungsgesetz"
+--------------------------------------------------------------------------------
+WER: 0.583333, CER: 0.393103, loss: 315.901550
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a252bb81-e652-48fd-9c85-1db9c7763012.wav
+ - src: "ich habe persönlich auch ein sehr hohes vertrauen  dies geht so glaube ich in meiner fraktion sehr vielen so  in unseren regierungsrat in corpore"
+ - res: "ich persönlich sehr hohes vertrauen dass gegen die ihre fraktion sehr viele so sehr heeresverwaltung in corpore"
+--------------------------------------------------------------------------------
+WER: 0.583333, CER: 0.503106, loss: 307.063141
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/6fa64c4b-039e-4e0f-ab60-e50e61b67a5d.wav
+ - src: "ich kann aus sicht der ngo bestätigen dass die zusammenarbeit in diesem gremium sehr gut funktioniert und dieser motionspunkt entsprechend auch schon erfüllt ist"
+ - res: "ich kann aus sicht auch der ängstigen dass die zusammenarbeit in diesem gremium sehr gut funktioniert und dementsprechend auch motions punkt bereits erfüllt ist wie die zusammenarbeit besteht und funktioniert"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 2.200000, CER: 1.152174, loss: 194.400665
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3f47607d-b205-4a0e-a58a-6873f17fa03a.wav
+ - src: "sie haben diesen rückweisungsantrag angenommen"
+ - res: "in der istra angenommen mit hundert vierzehn ja stimmen achtzehn einstimmen"
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.818182, loss: 181.085007
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/115d34fe-5ddd-423f-ad20-00e3688b5174.wav
+ - src: "sie haben diesen antrag abgelehnt"
+ - res: "wie die abgelehnt mit sechsundachtzig nein stimmen wir sie in fünfzig ja stimmen"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.600000, loss: 39.767681
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c78ed748-bb18-4570-bc9b-7e85ec3edb48.wav
+ - src: "messerlilöffel "
+ - res: "messer löffel konkret"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.263158, loss: 23.914501
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a1730e5c-a16c-48b1-a0bd-4bfce1357f24.wav
+ - src: "ausgabenbewilligung"
+ - res: "es gab bewilligung"
+--------------------------------------------------------------------------------
+WER: 5.000000, CER: 1.500000, loss: 81.425995
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/0502fed3-7fb1-4833-8f57-07a6ab0c07fc.wav
+ - src: "entschuldigung"
+ - res: "habe ich zwei sechzig sie"
+--------------------------------------------------------------------------------
+I Exporting the model...
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3023309
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob
+I Model metadata file saved to /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob/author_model_0.0.1.md. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.
+
+(python-environments) deborah@LAPTOP-01TEDV2B:~/deepspeech-german$ ./fine_tune_model.sh sg-small07/
+./fine_tune_model.sh: line 4: python-environments/env/bin/activate: No such file or directory
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3023309
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/bias/Adam
+I Loading variable from checkpoint: layer_6/bias/Adam_1
+I Loading variable from checkpoint: layer_6/weights
+I Loading variable from checkpoint: layer_6/weights/Adam
+I Loading variable from checkpoint: layer_6/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:06:59 | Steps: 259 | Loss: 148.531006                                                                                EpEpoch 0 |   Training | Elapsed Time: 3:08:48 | Steps: 7270 | Loss: 146.984790
+Epoch 0 | Validation | Elapsed Time: 0:12:01 | Steps: 1563 | Loss: 136.331645 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 136.331645 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3030579
+--------------------------------------------------------------------------------
+Epoch 1 |   Training | Elapsed Time: 3:08:04 | Steps: 7270 | Loss: 146.324269
+Epoch 1 | Validation | Elapsed Time: 0:12:00 | Steps: 1563 | Loss: 135.542869 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 135.542869 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3037849
+--------------------------------------------------------------------------------
+Epoch 2 |   Training | Elapsed Time: 3:08:11 | Steps: 7270 | Loss: 145.928038
+Epoch 2 | Validation | Elapsed Time: 0:12:01 | Steps: 1563 | Loss: 135.122700 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 135.122700 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3045119
+--------------------------------------------------------------------------------
+Epoch 3 |   Training | Elapsed Time: 3:09:19 | Steps: 7270 | Loss: 145.130225
+Epoch 3 | Validation | Elapsed Time: 0:12:23 | Steps: 1563 | Loss: 134.833744 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 134.833744 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3052389
+--------------------------------------------------------------------------------
+Epoch 4 |   Training | Elapsed Time: 0:05:37 | Steps: 209 | Loss: 143.581858                                                                                 
+I FINISHED optimization in 13:28:38.476703
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3052389
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on sg-small07//test.csv
+Test epoch | Steps: 1560 | Elapsed Time: 0:26:17
+Test on sg-small07//test.csv - WER: 0.564585, CER: 0.326176, loss: 134.146454, BLEU: 0.260883
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 59.035824
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/9628ba9a-f9c8-45e9-896a-0b36ebeb3b4d.wav
+ - src: "ein abbau von fossilen rohstoffen ist somit wie gesagt sehr sehr unwahrscheinlich"
+ - res: "ein abbau von fossilen rohstoffen ist somit wie gesagt sehr sehr unwahrscheinlich"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.015625, loss: 53.669361
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/292b1794-8b68-4842-883b-b05ff4fb8024.wav
+ - src: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von  drei komma fünf  prozent sehr hoch finden"
+ - res: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von drei komma fünf prozent sehr hoch finden"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 51.315422
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/e847a12e-77d8-4bc4-834f-45ca86e92046.wav
+ - src: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+ - res: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 49.449436
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3572e078-7a2d-4572-b4c2-e54fe0dfa593.wav
+ - src: "die svp fraktion befürwortet ein handelsabkommen mit malaysia indonesien und weiteren staaten südostasiens"
+ - res: "die svp fraktion befürwortet ein handelsabkommen mit malaysia indonesien und weiteren staaten südostasiens"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 43.554604
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/5e57c367-2a85-4c97-ade5-f8a8b02a88a9.wav
+ - src: "dort geht es um eine konkrete angelegenheit und nicht wie hier um eine blankovollmacht"
+ - res: "dort geht es um eine konkrete angelegenheit und nicht wie hier um eine blankovollmacht"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.565217, CER: 0.318519, loss: 166.723358
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/4b933cb2-1475-46aa-b0d9-4655b3f65f16.wav
+ - src: "auch das sollten wir den wählerinnen und wählern gelegentlich sagen auch das gehört zur stunde der wahrheit von der vorhin die rede war"
+ - res: "all das sollte man den wählern und unehelich sehen auch das gehört zur stunde der wahrheit die man vor angerufen an"
+--------------------------------------------------------------------------------
+WER: 0.565217, CER: 0.197674, loss: 165.054703
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/9121c0c9-e2ea-499d-a93c-df5bcfdce57d.wav
+ - src: "jetzt haben wir hier einen neuen rückweisungsantrag der aus meiner sicht eine art kompromissantrag sein soll damit man die entwicklungszusammenarbeit nicht ganz herausnimmt"
+ - res: "jetzt haben wir hier eine neue rückweisung antrag aus meiner sicht er ante ein kompromissantrag sei dass man entwicklungszusammenarbeit nicht ganz aus einnimmt"
+--------------------------------------------------------------------------------
+WER: 0.565217, CER: 0.275449, loss: 163.311813
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c90a0f8c-f0ae-44ca-81c3-b0fad4794d6f.wav
+ - src: "wenn es jedoch um ein gesellschaftliches anliegen geht sticht die eigenverantwortung nicht mehr weil die direkte unmittelbare betroffenheit überhaupt nicht mehr da ist"
+ - res: "es aber um einen gesellschaftlich anliegen geht den sticht gegen verantwortung eben nicht die direkte unmittelbare betroffen hat und überhaupt nicht mehr da ist"
+--------------------------------------------------------------------------------
+WER: 0.565217, CER: 0.309677, loss: 160.940918
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/143680ff-e72a-4b16-ab67-2089b64fe9e3.wav
+ - src: "obwohl gerade gestern ein neuer verhandlungserfolg zwischen der insel gruppe ag und der tarifsuisse ag publik wurde ist das problem natürlich nicht gebannt"
+ - res: "obwohl gestern eine neue verhandlungserfolg zwischen drin zu gruppe ange und arisiert das problem natürlich nicht an"
+--------------------------------------------------------------------------------
+WER: 0.565217, CER: 0.352941, loss: 160.558685
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3af5ba9a-e868-4645-9242-0028c57e97f9.wav
+ - src: "ich finde es auch gut dass man weiss dass die vertretung der bdp die anliegen der hauseigentümer vertritt und das auch transparent macht"
+ - res: "es sind es interessant dass man der gut dass man weiss dass die vertretung der belange der eigentümer vertritt und die transparenz macht"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 2.200000, CER: 1.282609, loss: 206.502289
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3f47607d-b205-4a0e-a58a-6873f17fa03a.wav
+ - src: "sie haben diesen rückweisungsantrag angenommen"
+ - res: "in der istra angenommen mit einhundertvierzehn ja stimmen bei achtzehn einstimmen"
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.848485, loss: 183.375076
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/115d34fe-5ddd-423f-ad20-00e3688b5174.wav
+ - src: "sie haben diesen antrag abgelehnt"
+ - res: "wir die abgelehnt mit sechsundachtzig nein stimmen wir sie in fünfzig ja stimmen"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.600000, loss: 41.538448
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c78ed748-bb18-4570-bc9b-7e85ec3edb48.wav
+ - src: "messerlilöffel "
+ - res: "messer löffel konkret"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.263158, loss: 24.316469
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a1730e5c-a16c-48b1-a0bd-4bfce1357f24.wav
+ - src: "ausgabenbewilligung"
+ - res: "es gab bewilligung"
+--------------------------------------------------------------------------------
+WER: 4.000000, CER: 1.500000, loss: 83.210625
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/0502fed3-7fb1-4833-8f57-07a6ab0c07fc.wav
+ - src: "entschuldigung"
+ - res: "habe ich zweiundsechzig sie"
+--------------------------------------------------------------------------------
+I Exporting the model...
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3052389
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob
+I Model metadata file saved to /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob/author_model_0.0.1.md. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.
+
+
+(python-environments) deborah@LAPTOP-01TEDV2B:~/deepspeech-german$ ./fine_tune_model.sh sg-small07/
+./fine_tune_model.sh: line 4: python-environments/env/bin/activate: No such file or directory
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3052389
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/bias/Adam
+I Loading variable from checkpoint: layer_6/bias/Adam_1
+I Loading variable from checkpoint: layer_6/weights
+I Loading variable from checkpoint: layer_6/weights/Adam
+I Loading variable from checkpoint: layer_6/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:01:08 | Steps: 40 | Loss: 145.790454                                                                                                                                      EpEpoch 0 |   Training | Elapsed Time: 1:56:33 | Steps: 4478 | Loss: 144.574823                            Epoch 0 |   Training | Elapsed Time: 2:00:58 | Steps: 4650 | Loss: 144.419604                             Epoch 0 |   Training | Elapsed Time: 3:10:11 | Steps: 7270 | Loss: 143.905608
+Epoch 0 | Validation | Elapsed Time: 0:12:23 | Steps: 1563 | Loss: 134.297968 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 134.297968 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3059659
+--------------------------------------------------------------------------------
+Epoch 1 |   Training | Elapsed Time: 3:12:18 | Steps: 7270 | Loss: 143.470519
+Epoch 1 | Validation | Elapsed Time: 0:12:21 | Steps: 1563 | Loss: 133.763563 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 133.763563 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3066929
+--------------------------------------------------------------------------------
+Epoch 2 |   Training | Elapsed Time: 3:10:29 | Steps: 7270 | Loss: 143.294753
+Epoch 2 | Validation | Elapsed Time: 0:12:07 | Steps: 1563 | Loss: 133.426287 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 133.426287 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3074199
+--------------------------------------------------------------------------------
+Epoch 3 |   Training | Elapsed Time: 3:09:12 | Steps: 7270 | Loss: 142.711700
+Epoch 3 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 133.021668 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 133.021668 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3081469
+--------------------------------------------------------------------------------
+Epoch 4 |   Training | Elapsed Time: 3:09:03 | Steps: 7270 | Loss: 142.769489
+Epoch 4 | Validation | Elapsed Time: 0:12:08 | Steps: 1563 | Loss: 132.645362 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 132.645362 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3088739
+--------------------------------------------------------------------------------
+Epoch 5 |   Training | Elapsed Time: 0:45:55 | Steps: 1759 | Loss: 143.754957                                                                                 Epoch 5 |   Training | Elapsed Time: 0:45:56 | Steps:Epoch 5 |   Training | Elapsed Time: 3:10:29 | Steps: 7270 | Loss: 142.484660
+Epoch 5 | Validation | Elapsed Time: 0:12:02 | Steps: 1563 | Loss: 132.717949 | Dataset: sg-small07//dev.csv
+--------------------------------------------------------------------------------
+Epoch 6 |   Training | Elapsed Time: 3:11:00 | Steps: 7270 | Loss: 142.407882
+Epoch 6 | Validation | Elapsed Time: 0:12:10 | Steps: 1563 | Loss: 132.069880 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 132.069880 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3103279
+--------------------------------------------------------------------------------
+Epoch 7 |   Training | Elapsed Time: 0:48:43 | Steps: 1861 | Loss: 143.333429
+Epoch 7 |   Training | Elapsed Time: 3:08:37 | Steps: 7270 | Loss: 141.996296
+Epoch 7 | Validation | Elapsed Time: 0:12:04 | Steps: 1563 | Loss: 131.686732 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 131.686732 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3110549
+--------------------------------------------------------------------------------
+Epoch 8 |   Training | Elapsed Time: 3:08:13 | Steps: 7270 | Loss: 141.559643
+Epoch 8 | Validation | Elapsed Time: 0:12:01 | Steps: 1563 | Loss: 131.378867 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 131.378867 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3117819
+--------------------------------------------------------------------------------
+Epoch 9 |   Training | Elapsed Time: 0:01:46 | Steps: 65 | Loss: 144.430424                                                                                                                                       ^CProcess ForkPoolWorker-228:
+Process ForkPoolWorker-226:
+Process ForkPoolWorker-227:
+Process ForkPoolWorker-222:
+Process ForkPoolWorker-224:
+Process ForkPoolWorker-223:
+Process ForkPoolWorker-221:
+Process ForkPoolWorker-220:
+Process ForkPoolWorker-217:
+Process ForkPoolWorker-218:
+Process ForkPoolWorker-219:
+Process ForkPoolWorker-225:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 352, in get
+    res = self._reader.recv_bytes()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+I FINISHED optimization in 1 day, 6:21:09.905617
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3117819
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on sg-small07//test.csv
+Test epoch | Steps: 1560 | Elapsed Time: 0:24:55
+Test on sg-small07//test.csv - WER: 0.550570, CER: 0.320246, loss: 130.756760, BLEU: 0.274337
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.015625, loss: 53.803364
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/292b1794-8b68-4842-883b-b05ff4fb8024.wav
+ - src: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von  drei komma fünf  prozent sehr hoch finden"
+ - res: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von drei komma fünf prozent sehr hoch finden"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 50.586395
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/e847a12e-77d8-4bc4-834f-45ca86e92046.wav
+ - src: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+ - res: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 50.342506
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/9628ba9a-f9c8-45e9-896a-0b36ebeb3b4d.wav
+ - src: "ein abbau von fossilen rohstoffen ist somit wie gesagt sehr sehr unwahrscheinlich"
+ - res: "ein abbau von fossilen rohstoffen ist somit wie gesagt sehr sehr unwahrscheinlich"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 47.798164
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3572e078-7a2d-4572-b4c2-e54fe0dfa593.wav
+ - src: "die svp fraktion befürwortet ein handelsabkommen mit malaysia indonesien und weiteren staaten südostasiens"
+ - res: "die svp fraktion befürwortet ein handelsabkommen mit malaysia indonesien und weiteren staaten südostasiens"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.063830, loss: 45.597622
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/79b4d73b-133c-40f4-a4e0-47ed4e170459.wav
+ - src: "sie haben auch die ziffer  vier  als postulat angenommen mit  neunundneunzig  ja  gegen  vierundvierzig  nein stimmen bei  null  enthaltungen"
+ - res: "sie haben auch die ziffer vier als postulat angenommen mit neunundneunzig ja gegen vierundvierzig nein stimmen bei null enthaltungen"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.550000, CER: 0.429658, loss: 579.382202
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/daeca4e6-d224-42e3-8aa5-c153eb403259.wav
+ - src: "bei der replik auf die antwort der regierung welche das vor allem aus formalen gründen ablehnt möchte ich festhalten dass sich trotzdem eine deklaratorische wirkung entwickelt auch wenn man es gegenüber dritten nicht durchsetzen kann es also nicht justiziabel ist"
+ - res: "die replik auf die antwort der regierung die es ablehnt aus formalen gründen vor allem in der zu festhalten auch wenn man gegenüber dritten nicht kursen nicht justiziabel ist"
+--------------------------------------------------------------------------------
+WER: 0.550000, CER: 0.332155, loss: 471.307648
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/930ec80e-5b62-4036-bae8-513378cca680.wav
+ - src: "der umstand dass gummigeschosse in der regel nicht tödlich wirken wird dazu genutzt die waffen auch präventiv verwenden zu können also zum fernhalten von personengruppen wie fussballfans oder demonstrantinnen und demonstranten oder auch um sie als sanktionsmittel verwenden zu können"
+ - res: "der umstand dass gummigeschoss in der eu nicht örtlich wirken wird dafür genutzt dass die wo waffen präventiv zum fernhalten von personengruppen wie ausbauen oder demonstrant in der auch aus sanktionsmittel verwendet werden"
+--------------------------------------------------------------------------------
+WER: 0.550000, CER: 0.387931, loss: 340.204651
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3ee98d05-5d43-4f8e-a398-83cc7f9eee71.wav
+ - src: "es ist wichtig und richtig wenn wir als grosser rat versuchen unter das was war  das was wir jetzt ablösen das was national schon abgelöst wurde und jetzt auch kantonal abgelöst und neu geregelt wird  einen sauberen strich zu ziehen"
+ - res: "es ist wichtig und richtig wenn wir als grosse rat des die ehe die wir je ablösen die national schalt und kantonal abgelöst wird neu geregelt wird dass wir die ist sehen"
+--------------------------------------------------------------------------------
+WER: 0.550000, CER: 0.481752, loss: 328.157440
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a8cd7c7d-a16d-4a84-a81b-8a45472ab613.wav
+ - src: "eine allgemeine steuererhöhung dürfte kaum zur diskussion stehen wenn man sich anschaut auf welchem niveau wir uns heute bereits befinden"
+ - res: "die steuererder die kaum zur diskussion stehen wenn man auf ein wo wir heute schon in"
+--------------------------------------------------------------------------------
+WER: 0.550000, CER: 0.223938, loss: 320.084808
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/daa6d71a-4285-4d83-b762-c624e65ed02b.wav
+ - src: "aufgrund kontroverser erfahrungen mit diesen französischlehrmitteln von denen wir jetzt schon gehört haben aus der praxis aber auch die ergebnisse der studie von der wir schon gehört haben finde ich es berechtigt dass diese anliegen jetzt auf dem tisch liegen"
+ - res: "auf grund von kontrovers erfahrungen mit dieser französisch lehrmittel die wir schon gehört haben aus der praxis aber auch ergebnis dieser studien die wir in den gehört haben finde berechtigt dass die anliegen zu dem tisch liegen"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.326087, loss: 195.447937
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3f47607d-b205-4a0e-a58a-6873f17fa03a.wav
+ - src: "sie haben diesen rückweisungsantrag angenommen"
+ - res: "in der kunst angenommen mit einhundertvierzehn ja stimmen bei achtzehn nein stimmen"
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.848485, loss: 182.921524
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/115d34fe-5ddd-423f-ad20-00e3688b5174.wav
+ - src: "sie haben diesen antrag abgelehnt"
+ - res: "wir die abgelehnt mit sechsundachtzig nein stimmen wir sie in fünfzig ja stimmen"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.600000, loss: 40.972759
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c78ed748-bb18-4570-bc9b-7e85ec3edb48.wav
+ - src: "messerlilöffel "
+ - res: "messer löffel konkret"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.263158, loss: 23.858421
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a1730e5c-a16c-48b1-a0bd-4bfce1357f24.wav
+ - src: "ausgabenbewilligung"
+ - res: "es gab bewilligung"
+--------------------------------------------------------------------------------
+WER: 4.000000, CER: 1.500000, loss: 81.259407
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/0502fed3-7fb1-4833-8f57-07a6ab0c07fc.wav
+ - src: "entschuldigung"
+ - res: "habe ich zweiundsechzig sie"
+--------------------------------------------------------------------------------
+I Exporting the model...
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3117819
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob
+I Model metadata file saved to /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob/author_model_0.0.1.md. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.
+
+(python-environments) deborah@LAPTOP-01TEDV2B:~/deepspeech-german$ ./fine_tune_model.sh sg-small07/
+./fine_tune_model.sh: line 4: python-environments/env/bin/activate: No such file or directory
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3117819
+I Loading variable from checkpoint: beta1_power
+I Loading variable from checkpoint: beta2_power
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias/Adam_1
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel/Adam_1
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/bias/Adam
+I Loading variable from checkpoint: layer_1/bias/Adam_1
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_1/weights/Adam
+I Loading variable from checkpoint: layer_1/weights/Adam_1
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/bias/Adam
+I Loading variable from checkpoint: layer_2/bias/Adam_1
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_2/weights/Adam
+I Loading variable from checkpoint: layer_2/weights/Adam_1
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/bias/Adam
+I Loading variable from checkpoint: layer_3/bias/Adam_1
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_3/weights/Adam
+I Loading variable from checkpoint: layer_3/weights/Adam_1
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/bias/Adam
+I Loading variable from checkpoint: layer_5/bias/Adam_1
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_5/weights/Adam
+I Loading variable from checkpoint: layer_5/weights/Adam_1
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/bias/Adam
+I Loading variable from checkpoint: layer_6/bias/Adam_1
+I Loading variable from checkpoint: layer_6/weights
+I Loading variable from checkpoint: layer_6/weights/Adam
+I Loading variable from checkpoint: layer_6/weights/Adam_1
+I Loading variable from checkpoint: learning_rate
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:01:44 | Steps: 62 | Loss: 141.553172                                                                                           Epoch 0 |   Training | Elapsed Time: 0:04:25 Epoch 0 |   Training | Elapsed Time: 1:27:48 | Steps: 3326 | Loss: 140.373095                            Epoch 0 |   Training | Elapsed Time: 3:12:24 | Steps: 7270 | Loss: 139.668476
+Epoch 0 | Validation | Elapsed Time: 0:12:22 | Steps: 1563 | Loss: 131.351217 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 131.351217 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3125089
+--------------------------------------------------------------------------------
+Epoch 1 |   Training | Elapsed Time: 3:10:02 | Steps: 7270 | Loss: 139.397185
+Epoch 1 | Validation | Elapsed Time: 0:12:05 | Steps: 1563 | Loss: 131.034526 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 131.034526 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3132359
+--------------------------------------------------------------------------------
+Epoch 2 |   Training | Elapsed Time: 3:09:14 | Steps: 7270 | Loss: 139.413238
+Epoch 2 | Validation | Elapsed Time: 0:12:07 | Steps: 1563 | Loss: 130.787074 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 130.787074 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3139629
+--------------------------------------------------------------------------------
+Epoch 3 |   Training | Elapsed Time: 3:09:40 | Steps: 7270 | Loss: 138.970753
+Epoch 3 | Validation | Elapsed Time: 0:12:07 | Steps: 1563 | Loss: 130.376150 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 130.376150 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3146899
+--------------------------------------------------------------------------------
+Epoch 4 |   Training | Elapsed Time: 3:11:11 | Steps: 7270 | Loss: 138.957597
+Epoch 4 | Validation | Elapsed Time: 0:12:14 | Steps: 1563 | Loss: 130.194611 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 130.194611 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3154169
+--------------------------------------------------------------------------------
+Epoch 5 |   Training | Elapsed Time: 3:10:52 | Steps: 7270 | Loss: 138.676819
+Epoch 5 | Validation | Elapsed Time: 0:12:14 | Steps: 1563 | Loss: 130.105325 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 130.105325 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3161439
+--------------------------------------------------------------------------------
+Epoch 6 |   Training | Elapsed Time: 3:11:28 | Steps: 7270 | Loss: 138.827090
+Epoch 6 | Validation | Elapsed Time: 0:12:17 | Steps: 1563 | Loss: 129.709630 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 129.709630 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3168709
+--------------------------------------------------------------------------------
+Epoch 7 |   Training | Elapsed Time: 3:12:00 | Steps: 7270 | Loss: 138.384649
+Epoch 7 | Validation | Elapsed Time: 0:12:19 | Steps: 1563 | Loss: 129.501565 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 129.501565 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3175979
+--------------------------------------------------------------------------------
+Epoch 8 |   Training | Elapsed Time: 3:12:04 | Steps: 7270 | Loss: 138.114289
+Epoch 8 | Validation | Elapsed Time: 0:12:19 | Steps: 1563 | Loss: 129.439968 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 129.439968 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3183249
+--------------------------------------------------------------------------------
+Epoch 9 |   Training | Elapsed Time: 3:12:09 | Steps: 7270 | Loss: 138.186244
+Epoch 9 | Validation | Elapsed Time: 0:12:18 | Steps: 1563 | Loss: 129.121479 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 129.121479 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3190519
+--------------------------------------------------------------------------------
+Epoch 10 |   Training | Elapsed Time: 3:11:57 | Steps: 7270 | Loss: 137.815515
+Epoch 10 | Validation | Elapsed Time: 0:12:18 | Steps: 1563 | Loss: 128.929013 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 128.929013 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3197789
+--------------------------------------------------------------------------------
+Epoch 11 |   Training | Elapsed Time: 3:12:13 | Steps: 7270 | Loss: 137.857824
+Epoch 11 | Validation | Elapsed Time: 0:12:20 | Steps: 1563 | Loss: 128.831499 | Dataset: sg-small07//dev.csv
+I Saved new best validating model with loss 128.831499 to: /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3205059
+--------------------------------------------------------------------------------
+Epoch 12 |   Training | Elapsed Time: 0:03:18 | Steps: 121 | Loss: 138.704838                                                                                ^CProcess ForkPoolWorker-291:
+Process ForkPoolWorker-300:
+Process ForkPoolWorker-298:
+Process ForkPoolWorker-297:
+Process ForkPoolWorker-293:
+Process ForkPoolWorker-294:
+Process ForkPoolWorker-295:
+Process ForkPoolWorker-292:
+Process ForkPoolWorker-296:
+Process ForkPoolWorker-299:
+Process ForkPoolWorker-290:
+Process ForkPoolWorker-289:
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+KeyboardInterrupt
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 352, in get
+    res = self._reader.recv_bytes()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/connection.py", line 216, in recv_bytes
+    buf = self._recv_bytes(maxlength)
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/pool.py", line 110, in worker
+    task = get()
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/queues.py", line 351, in get
+    with self._rlock:
+  File "/home/deborah/.pyenv/versions/3.7.9/lib/python3.7/multiprocessing/synchronize.py", line 95, in __enter__
+    return self._semlock.__enter__()
+KeyboardInterrupt
+I FINISHED optimization in 1 day, 16:46:11.885030
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3205059
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: global_step
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+Testing model on sg-small07//test.csv
+Test epoch | Steps: 1560 | Elapsed Time: 0:25:37
+Test on sg-small07//test.csv - WER: 0.540469, CER: 0.313733, loss: 128.207230, BLEU: 0.287176
+--------------------------------------------------------------------------------
+Best WER:
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.015625, loss: 48.523769
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/292b1794-8b68-4842-883b-b05ff4fb8024.wav
+ - src: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von  drei komma fünf  prozent sehr hoch finden"
+ - res: "in der grünen fraktion sind wir nun zum schluss gekommen dass wir diesen zinssatz von drei komma fünf prozent sehr hoch finden"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 47.881012
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/e847a12e-77d8-4bc4-834f-45ca86e92046.wav
+ - src: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+ - res: "die stromversorgung ist eine empfindliche infrastruktur und sie ist vor allem für das funktionieren der wirtschaft zentral"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.000000, loss: 42.626469
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/1cba27f9-1b3e-4732-aa38-af9860efc035.wav
+ - src: "ich bitte die antragsteller ihre anträge zu erläutern"
+ - res: "ich bitte die antragsteller ihre anträge zu erläutern"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.025974, loss: 39.590313
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/292cddf6-85b4-4949-823f-e897ccf60046.wav
+ - src: "absatz  eins  möchten wir so belassen wie er vom regierungsrat vorgesehen ist"
+ - res: "absatz eins möchten wir so belassen wie er vom regierungsrat vorgesehen ist"
+--------------------------------------------------------------------------------
+WER: 0.000000, CER: 0.063830, loss: 38.856937
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/79b4d73b-133c-40f4-a4e0-47ed4e170459.wav
+ - src: "sie haben auch die ziffer  vier  als postulat angenommen mit  neunundneunzig  ja  gegen  vierundvierzig  nein stimmen bei  null  enthaltungen"
+ - res: "sie haben auch die ziffer vier als postulat angenommen mit neunundneunzig ja gegen vierundvierzig nein stimmen bei null enthaltungen"
+--------------------------------------------------------------------------------
+Median WER:
+--------------------------------------------------------------------------------
+WER: 0.538462, CER: 0.349398, loss: 119.342415
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/d6b759ba-acbe-42a3-a93d-757f50b98f90.wav
+ - src: "wir haben die regierung wir haben das parlament und wir haben die stimmbürgerschaft"
+ - res: "meine regierung wir haben das parlament und entmenschte aber die stimme schafft"
+--------------------------------------------------------------------------------
+WER: 0.538462, CER: 0.387500, loss: 118.023087
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/b0b0fa0b-e473-4f10-ac55-5d17f51bd253.wav
+ - src: "es ist auch unser anliegen dass der mechanismus des filag nicht hinterfragt wird"
+ - res: "die lage das ist auch unser anliegen dass es an nicht hinterfragt wird"
+--------------------------------------------------------------------------------
+WER: 0.538462, CER: 0.200000, loss: 115.639023
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/f784ab33-891b-4b1b-bab0-8c86bab8a4dd.wav
+ - src: "aus diesen gründen stehen einige von uns diesem gutgemeinten vorstoss etwas skeptisch gegenüber"
+ - res: "aus diesen gründen sind einige von uns mit dem gut meinen vorstoss und den skeptisch gegenüber"
+--------------------------------------------------------------------------------
+WER: 0.538462, CER: 0.282828, loss: 115.244720
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/b5aa2857-acd3-4bb0-8019-b46629be46ae.wav
+ - src: "grundsätzlich möchten wir mit diesem bericht keine neue integrationswelle auf die schulen loslassen"
+ - res: "grundsätzlich wollen wir nicht mit diesem bericht eine neue integrationswilligen wie auf die schule bringen"
+--------------------------------------------------------------------------------
+WER: 0.538462, CER: 0.333333, loss: 114.438248
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/3d7f001f-e945-4392-b6a6-1cfc0652592f.wav
+ - src: "zudem sind artikel drin welche man verknüpft die man hier schon beraten hat"
+ - res: "zudem sind artikel drinnen die mit der die wir schon beraten aber"
+--------------------------------------------------------------------------------
+Worst WER:
+--------------------------------------------------------------------------------
+WER: 2.250000, CER: 0.805556, loss: 115.947159
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/255e863c-10cf-4efe-b51c-af141cfd697f.wav
+ - src: "dergleichen wird nicht verunmöglicht"
+ - res: "es ist nicht so dass er es für unmöglich wird"
+--------------------------------------------------------------------------------
+WER: 2.400000, CER: 1.818182, loss: 183.721390
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/115d34fe-5ddd-423f-ad20-00e3688b5174.wav
+ - src: "sie haben diesen antrag abgelehnt"
+ - res: "wir die abgelehnt mit sechsundachtzig nein stimmen bei seinen fünfzig ja stimmen"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.866667, loss: 41.639599
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/c78ed748-bb18-4570-bc9b-7e85ec3edb48.wav
+ - src: "messerlilöffel "
+ - res: "der löffel konkret"
+--------------------------------------------------------------------------------
+WER: 3.000000, CER: 0.263158, loss: 25.138981
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/a1730e5c-a16c-48b1-a0bd-4bfce1357f24.wav
+ - src: "ausgabenbewilligung"
+ - res: "es gab bewilligung"
+--------------------------------------------------------------------------------
+WER: 4.000000, CER: 1.571429, loss: 88.025307
+ - wav: file:///mnt/c/Users/debor/ml4nlp/audio/0502fed3-7fb1-4833-8f57-07a6ab0c07fc.wav
+ - src: "entschuldigung"
+ - res: "habe ich zweiundsechzig sagen"
+--------------------------------------------------------------------------------
+I Exporting the model...
+I Loading best validating checkpoint from /mnt/c/Users/debor/ml4nlp/processing-fine-tune-on-archimob//checkpoints/best_dev-3205059
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/bias
+I Loading variable from checkpoint: cudnn_lstm/rnn/multi_rnn_cell/cell_0/cudnn_compatible_lstm_cell/kernel
+I Loading variable from checkpoint: layer_1/bias
+I Loading variable from checkpoint: layer_1/weights
+I Loading variable from checkpoint: layer_2/bias
+I Loading variable from checkpoint: layer_2/weights
+I Loading variable from checkpoint: layer_3/bias
+I Loading variable from checkpoint: layer_3/weights
+I Loading variable from checkpoint: layer_5/bias
+I Loading variable from checkpoint: layer_5/weights
+I Loading variable from checkpoint: layer_6/bias
+I Loading variable from checkpoint: layer_6/weights
+I Models exported at /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob
+I Model metadata file saved to /mnt/c/Users/debor/ml4nlp/model-fine-tune-on-archimob/author_model_0.0.1.md. Before submitting the exported model for publishing make sure all information in the metadata file is correct, and complete the URL fields.
