@@ -1,32 +1,21 @@
 \section{Results \& Discussion}
+Interestingly, we noticed that our internal deviations in the BLEU score are not as great as on the official test set. The BLEU score as well as the WER values are shown for each model in
+\cref{tab:Results}.
 
-Interestingly, we noticed that our internal deviations in the BLEU score are not as great as on the official test set.
-
-\begin{table}[H]
+\begin{table*}[!t]
     \centering
-    \begin{tabular}{llll}
-    \hline\textbf{Model\#}    & \textbf{Data} & \textbf{Train BLEU}   & \textbf{Test BLEU} \\\hline   %\\\hline %\rowcolor{gray!50}
-    1                   & SwissText     & 0.23                  & 0.0004                \\%\hline %DeepSpeech (Trained from scratch)
-    2                   & ArchiMob      & 0.27                  & \textbf{0.17}         \\%\hline %DeepSpeech (Pre-trained)
-    3                   & ArchiMob      & 0.24                  & 0.07                  \\%\hline %DeepSpeech + Opus-MT-DE-EN (Pre-trained)
-    4                   & ArchiMob      & 0.24                  & 0.07                  \\%\hline %DeepSpeech + Opus-MT-DE-EN (Pre-trained)
-    5                   & ArchiMob      & 0.24                  & 0.07                  \\%\hline %DeepSpeech + Opus-MT-DE-EN (Pre-trained)
+    \begin{tabular}{lllll}
+    \hline\textbf{Model\#}    & \textbf{Data} & \textbf{Train BLEU}   & \textbf{Test BLEU}  & \textbf{WER}  \\\hline
+    1                   & SwissText     & 0.23                  & 0.0004                    &               \\
+    2                   & ArchiMob      & 0.27                  & \textbf{0.17}             &               \\
+    3                   & ArchiMob      & 0.24                  & 0.07                      &               \\
+    4                   & ArchiMob      & 0.24                  & 0.07                      &               \\
+    5                   & ArchiMob      & 0.29                  & 0.07                      & 0.29          \\
     \hline
     \end{tabular}
-    \caption{\label{font-table} Font guide. }
-\end{table}
-
-%\begin{table}[b]
-%    \centering
-%    \begin{tabular}{lllll}
-%    %\begin{tabularx}{\linewidth}{|Y|Z|Y|s|s|}
-%        \hline
-%        \textbf{Model#} & \textbf{Data} & \textbf{Additional information}           & \textbf{Train BLEU}   & \textbf{Test BLEU}    \\\hline %\rowcolor{gray!50}
-%        1               & SwissText     & -                                         & 0.23                  & 0.0004                \\\hline %DeepSpeech (Trained from scratch)
-%        2               & ArchiMob      & Fine-tuned on latest German DeepSpeech    & 0.27                  & \textbf{0.17}         \\\hline %DeepSpeech (Pre-trained)
-%        3               & ArchiMob      & Additional sequence to sequence model     & 0.24                  & 0.07                  \\\hline %DeepSpeech + Opus-MT-DE-EN (Pre-trained)
-%    \end{tabular}
-% %   \end{tabularx}
-%    \caption{Results}
-%    \label{tab:Results}
-%\end{table}
+    \caption{Results}
+    \label{tab:Results}
+\end{table*}
+After multiple improvements our best results were achieved by our \nth{2} model. We assume that this is due to the dialect distribution on the actual test set, which is closer to the ArchiMob dataset
+than the \gls{stcd} dataset. We expect that further improvements can be achieved by the data augmentation approach, which had to be stopped due to time limitations. As previously explained in the
+model description the \nth{4} model was still improving and should be trained more extensively.
