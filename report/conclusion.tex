@@ -1,2 +1,7 @@
 \section{Conclusion}
-Although the other submissions to the task provided better results our model showed a constant increase in performance over the training time. Due to time limitations we had to stop training before our model has reached a point where it stopped improving. Overall, the DeepSpeech model provides a neat end-to-end architecture that provides a good basis for fine-tuning and adaptation to various languages.   
+Although the other submissions to the task provided better results our model showed a constant increase in performance over the training time. Due to time limitations, we had to stop training before
+our model has reached a point where it stopped improving. Overall, the DeepSpeech model provides a neat end-to-end architecture that provides a solid foundation for fine-tuning and adaptation to various
+languages. Further improvements could be achieved by self-training on the unlabelled data, which would allow us to incorporate more data into our training process. This approach would increase the
+amount of available data. While most likely providing better results and being less expensive than manually labeling the data. Another approach would be to add a better language model to rate the
+sentences provided by the beam search outputs. In addition to the two approaches, we expect that more exhaustive training with data augmentation could greatly improve the model. Apart from longer
+training time, a hyperparameter tuning approach with more augmentation methods could provide more insight into the topic.
