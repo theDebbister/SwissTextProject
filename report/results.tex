@@ -2,19 +2,6 @@
 Interestingly, we noticed that our internal deviations in the BLEU score are not as great as on the official test set. The BLEU score, as well as the WER values, are shown for each model in
 \cref{tab:Results}.
 
-\begin{table*}[!t]
-    \centering
-    \begin{tabular}{lllll}
-    \hline\textbf{Model\#}    & \textbf{Data} & \textbf{Train BLEU}   & \textbf{Test BLEU}  & \textbf{WER}  \\\hline
-    1                   & SwissText     & 0.23                  &  0.0004 & -              \\
-    2                   & ArchiMob      & 0.27                  & \textbf{0.17}             & 0.52             \\
-    3                   & ArchiMob + SwissText      & 0.28                  & 0.1                      & 0.54               \\
-    4                   & ArchiMob + SwissText + text-to-text      & 0.16                  & 0.07                      & -              \\
-    \hline
-    \end{tabular}
-    \caption{Results}
-    \label{tab:Results}
-\end{table*}
 After multiple improvements, our best results were achieved by our \nth{2} model. We assume that this is due to the dialect distribution on the actual test set, which is closer to the ArchiMob dataset
 than the \gls{stcd} dataset. We expect that further improvements can be achieved by the data augmentation approach, which had to be stopped due to time limitations. As previously explained in the
 model description the \nth{4} model was still improving and should be trained more extensively.

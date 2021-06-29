@@ -1,4 +1,17 @@
 \section{Experiments}
+\begin{table*}[!t]
+    \centering
+    \begin{tabular}{lllll}
+    \hline\textbf{Model\#}    & \textbf{Data} & \textbf{Train BLEU}   & \textbf{Test BLEU}  & \textbf{WER}  \\\hline
+    1                   & SwissText     & 0.23                  &  0.0004 & -              \\
+    2                   & ArchiMob      & 0.27                  & \textbf{0.17}             & 0.52             \\
+    3                   & ArchiMob + SwissText      & 0.28                  & 0.1                      & 0.54               \\
+    4                   & ArchiMob + SwissText + text-to-text      & 0.16                  & 0.07                      & -              \\
+    \hline
+    \end{tabular}
+    \caption{Results}
+    \label{tab:Results}
+\end{table*}
 
 \subsection{Training Data}
 To train our model we use a subset of the dataset provided by the \gls{stc} as well as the ArchiMob corpus. The \gls{stc} provides two different datasets. An unlabelled dataset of about 300 hours spoken Swiss German. The labeled dataset contains mostly the Bernese dialect. An additional 1200 hours of unlabeled spoken Swiss German audio data. The unlabelled dataset includes mostly the Zurich dialect. Due to time limitations, we did not use the second provided dataset. We remove all audio files from the \gls{stcd} where the quality of the translation is rated lower than 0.7 (rating provided by \gls{stc}) which are still around 130k files. Additionally, we also need to remove files larger than 1 MB due to memory limitations (ca. 7k files). All files were converted from FLAC to Wav files and the sample rate was reduced from 48'000 Hz to 16'000 Hz to match the DeepSpeech input requirements. The official test set contains 13 hours of data \cite{stc2019} and has a dialect distribution conforming to the actual Swiss German dialect distribution. In addition to the official datasets, we used the ArchiMob corpus (Release 2) which contains 57 hours of spoken Swiss German data \cite{archimob2016}. They provide Swiss German and German transcriptions and it consists of various different dialects.
@@ -36,12 +49,17 @@ model with the following data augmentations:
 \end{itemize}
 
 The \gls{stcd} dataset is used for the augmentation fine-tuning on the \nth{3} model. This approach achieved a BLEU score of 0.28 on the validation set and 0.1 on the test set. The model was trained for another
-20 epochs with a warp probability of 0.1 and a tempo probability of 0.1. One epoch on this model took around 3.5h to complete. Due to time limitations we
-were not able to continue training the model any further, but the model was still improving and we expect that this approach could produce even better results. The \gls{wer} progression is depicted in the following plot:
-\begin{figure}[H]
-    \includegraphics[width=\linewidth,height=5cm]{img/werPlot.png}
+20 epochs with a warp probability of 0.1 and a tempo probability of 0.1. One epoch on this model took around 4h to complete. Due to time limitations we
+were not able to continue training the model any further, but the model was still improving and we expect that this approach could produce even better results. The \gls{wer} and BLEU progression are shown in figures \ref{fig:WER} and  \ref{fig:BLEU}.
+\begin{figure}[t]
+    \includegraphics[width=\linewidth,height=5cm]{img/WER.png}
     \caption{WER per epoch}
-    \label{fig:werPerEpoch}
+    \label{fig:WER}
+\end{figure}
+\begin{figure}[t]
+    \includegraphics[width=\linewidth,height=5cm]{img/BLEU.png}
+    \caption{BLEU per epoch}
+    \label{fig:BLEU}
 \end{figure}
 
 \paragraph{Text-to-Text model \#4} Our \nth{4} approach tries to improve the output by adding a text-to-text translation model after the speech-to-text model. We fine-tuned a pre-trained German to
